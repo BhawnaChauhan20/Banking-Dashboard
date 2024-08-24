@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banking Dashboard</h1>
+        <div class="balance">
+            <h2>Current Balance: $<span id="balance">1000</span></h2>
+        </div>
+        <div class="transaction">
+            <h3>Deposit Money</h3>
+            <input type="number" id="depositAmount" placeholder="Enter amount">
+            <button onclick="deposit()">Deposit</button>
+        </div>
+        <div class="transaction">
+            <h3>Withdraw Money</h3>
+            <input type="number" id="withdrawAmount" placeholder="Enter amount">
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us: info@banking.com | Follow us on social media</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
